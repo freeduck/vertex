@@ -1,3 +1,6 @@
 [submodule "upstream/codemirror"]
 	path = upstream/codemirror
 	url = https://github.com/codemirror/CodeMirror.git
+[submodule "upstream/svgedit"]
+	path = upstream/svgedit
+	url = https://github.com/SVG-Edit/svgedit.git
