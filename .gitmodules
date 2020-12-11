@@ -1,0 +1,3 @@
+[submodule "upstream/codemirror"]
+	path = upstream/codemirror
+	url = https://github.com/codemirror/CodeMirror.git
