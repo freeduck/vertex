@@ -4,3 +4,6 @@
 [submodule "upstream/svgedit"]
 	path = upstream/svgedit
 	url = https://github.com/SVG-Edit/svgedit.git
+[submodule "upstream/matter"]
+	path = upstream/matter
+	url = git@github.com:liabru/matter-js.git

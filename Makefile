@@ -1,4 +1,13 @@
-all: codemirror
+all: codemirror matter
+matter: public/upstream/matter/matter.min.js
+.PHONY: matter
+
+public/upstream/matter/matter.min.js: upstream/matter/build/matter.min.js public/upstream/matter
+	cp upstream/matter/build/matter.min.js public/upstream/matter
+public/upstream/matter:
+	mkdir public/upstream/matter
+upstream/matter/build/matter.min.js:
+	cd upstream/matter && npm install
 codemirror: public/upstream/codemirror/codemirror.js \
 	public/upstream/codemirror/codemirror.css \
 	public/upstream/codemirror \
