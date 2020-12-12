@@ -2,8 +2,9 @@
 <html>
 <head>
   <title>Page Title</title>
-  <link rel="stylesheet" href="upstream/codemirror/codemirror.css">
-  <script src="upstream/codemirror/codemirror.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="upstream/codemirror/lib/codemirror.css">
+  <link rel="stylesheet" href="upstream/codemirror/theme/monokai.css">
+  <script src="upstream/codemirror/lib/codemirror.js" type="text/javascript"></script>
   <script src="upstream/codemirror/mode/javascript/javascript.js" type="text/javascript"></script>
 </head>
 <body>
@@ -12,8 +13,9 @@
 <p>This is a paragraph.</p>
 <script type="text/javascript">
   var myCodeMirror = CodeMirror(document.body, {
-  value: "function myScript(){return 100;}\n",
-  mode:  "javascript"
+      value: "function myScript(){return 100;}\n",
+      mode:  "javascript",
+      theme: "monokai"
 });
 </script>
 </body>
