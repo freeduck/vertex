@@ -25,7 +25,7 @@ public/upstream/codemirror/codemirror.css:
 	cp upstream/codemirror/lib/codemirror.css public/upstream/codemirror/codemirror.css
 
 
-upstream/codemirror/lib/codemirror.js:
+upstream/codemirror/lib/codemirror.js: public/upstream/codemirror
 	cd upstream/codemirror && npm install
 
 public/upstream/codemirror:
