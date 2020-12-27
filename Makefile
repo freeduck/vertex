@@ -6,8 +6,10 @@ public/upstream/matter/matter.min.js: upstream/matter/build/matter.min.js public
 	cp upstream/matter/build/matter.min.js public/upstream/matter
 public/upstream/matter:
 	mkdir public/upstream/matter
-upstream/matter/build/matter.min.js:
+upstream/matter/build/matter.min.js: upstream/matter/README.md
 	cd upstream/matter && npm install
+upstream/matter/README.md:
+	git submodule update --init
 codemirror: public/upstream/codemirror/codemirror.js \
 	public/upstream/codemirror/codemirror.css \
 	public/upstream/codemirror \
@@ -17,7 +19,7 @@ codemirror: public/upstream/codemirror/codemirror.js \
 	public/upstream/codemirror/addon
 .PHONY: codemirror
 
-public/upstream/codemirror/codemirror.js: upstream/codemirror/lib/codemirror.js 
+public/upstream/codemirror/codemirror.js: upstream/codemirror/lib/codemirror.js
 	cp upstream/codemirror/lib/codemirror.js public/upstream/codemirror/codemirror.js
 public/upstream/codemirror/codemirror.css:
 	cp upstream/codemirror/lib/codemirror.css public/upstream/codemirror/codemirror.css
