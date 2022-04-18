@@ -7,3 +7,6 @@
 [submodule "upstream/matter"]
 	path = upstream/matter
 	url = git@github.com:liabru/matter-js.git
+[submodule "x3dom"]
+	path = x3dom
+	url = https://github.com/x3dom/x3dom.git
